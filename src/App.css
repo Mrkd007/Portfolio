@@ -61,6 +61,11 @@
   align-items: center;
   justify-content: center;
 }
+
+#user-name {
+  max-width: 50vw;
+}
+
 #user-name path {
   animation: word-animate-fill 2s ease-in-out 4s forwards,
   word-animate-fill 2s ease-in-out 4s forwards;
