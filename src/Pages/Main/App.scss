@@ -1,7 +1,10 @@
 @use '../../Styles/global';
 
 .App-header {
-    background-color: #282c34;
+    background-color: #282c348c;
+    // background-image: url(/images/160-1606634_macbook-pro.jpg);
+    background-position: center center;
+    background-blend-mode: multiply;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

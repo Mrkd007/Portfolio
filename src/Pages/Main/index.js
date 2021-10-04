@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 
 import './App.scss';
+import backgroundImage from '../../Assets/images/background-bg.jpg';
 
 /**
 * @author
@@ -11,8 +12,8 @@ import './App.scss';
 const App = (props) => {
   return(
     <div className="App">
-        <Header />
-      <header className="App-header">
+      <Header />
+      <header className="App-header" style={{'background-image': `url("${backgroundImage}")`}}>
         <div className="body-container">
             <svg id="user-name" width="468" height="40" viewBox="0 0 468 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="0.960938" y="0.40625" width="467" height="40" fill="black">
