@@ -1,74 +1,83 @@
-.container.contact__conatiner {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+.c {
+  height: 100vh;
+  position: relative;
 }
 
-.contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #59b256;
+  position: absolute;
 }
 
-.contact__option {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    overflow: hidden;
-    word-wrap: break-word;
+.c-wrapper {
+  padding: 50px;
+  display: flex;
 }
 
-.contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+.c-left {
+  flex: 1;
 }
 
-.contact__option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+.c-title {
+  font-size: 60px;
+  width: 80%;
 }
 
-.contact__option a {
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
 }
 
-/* ============================= Form ============================ */
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.c-desc {
+  font-weight: 200;
+}
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  margin-top: 20px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
-    resize: none;
-    color: var(--color-white);
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
 }
 
-/* ================ Media Qurerries Medium ======================== */
-
-@media screen and (max-width: 1024px) {
-    .container.contact__conatiner {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+textarea {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
 }
 
-/* ================ Media Qurerries Small ======================== */
-
-@media screen and (max-width: 600px) {
-    .container.contact__conatiner {
-        width: var(--container-width-sm);
-    }
+button {
+  border: none;
+  padding: 15px;
+  background-color: #59b256;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
 }
+
